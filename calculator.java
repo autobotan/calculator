@@ -82,6 +82,9 @@ public class calculator {
             }
 
         }
+        if ((mas_number.size() <2) || mas_operands.size() <1)
+            throw new RuntimeException("Недостаточно данных");
+        
         return new My_values(mas_number, mas_operands);
     }
     public static int func_calc(My_values mas){
